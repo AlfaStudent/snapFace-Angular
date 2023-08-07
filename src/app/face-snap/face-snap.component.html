@@ -1,10 +1,10 @@
 <p>face-snap works!</p>
-<h2>{{title}}</h2>
-<p> {{description}}</p>
-<p> mise en ligne le : {{createDate}}</p>
+<h2>{{faceSnap.title}}</h2>
+<p> {{faceSnap.description}}</p>
+<p> mise en ligne le : {{faceSnap.createDate}}</p>
 
 <!-- <img src={{url}}> -->
-<img [src]="url" alt="photo de {{title}}" height="" width="10%">
-<p> {{snaps}}   
+<img [src]="faceSnap.url" alt="photo de {{faceSnap.title}}" height="" width="10%">
+<p> {{faceSnap.snaps}}   
 <button (click)="onSnap()">{{buttonText}}</button>
 </p>
