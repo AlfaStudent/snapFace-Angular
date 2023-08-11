@@ -5,6 +5,7 @@
 
 <!-- <img src={{url}}> -->
 <img [src]="faceSnap.url" alt="photo de {{faceSnap.title}}" height="" width="10%">
-<p> {{faceSnap.snaps}}   
+<p *ngIf = "faceSnap.location">photo prise a {{faceSnap.location}}</p>
+<p > {{faceSnap.snaps}}   
 <button (click)="onSnap()">{{buttonText}}</button>
 </p>
