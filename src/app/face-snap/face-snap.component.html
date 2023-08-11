@@ -1,14 +1,16 @@
-<p>face-snap works!</p>
-<h2>{{faceSnap.title}}</h2>
-<p> {{faceSnap.description}}</p>
-<p> mise en ligne le : {{faceSnap.createDate}}</p>
+<div class = "face-snap-card">
+    <p>face-snap works!</p>
+    <h2>{{faceSnap.title}}</h2>
+    <p> {{faceSnap.description}}</p>
+    <p> mise en ligne le : {{faceSnap.createDate}}</p>
 
-<!-- <img src={{url}}> -->
-<img [src]="faceSnap.url" alt="photo de {{faceSnap.title}}" height="" width="10%">
-<p *ngIf = "faceSnap.location">photo prise a {{faceSnap.location}}</p>
-<p >
-    <span [ngStyle] = "{color : 'rgb(0,'+ faceSnap.snaps + ',0)'}">  {{faceSnap.snaps}} </span>  
-<button (click)="onSnap()">
-    <span >  {{buttonText}} </span>
-</button>
-</p>
+    <!-- <img src={{url}}> -->
+    <img [src]="faceSnap.url" alt="photo de {{faceSnap.title}}" height="" width="10%">
+    <p *ngIf = "faceSnap.location">photo prise a {{faceSnap.location}}</p>
+    <p >
+        <span [ngStyle] = "{color : 'rgb(0,'+ faceSnap.snaps + ',0)'}">  {{faceSnap.snaps}} </span>  
+    <button (click)="onSnap()">
+        <span >  {{buttonText}} </span>
+    </button>
+    </p>
+</div>
