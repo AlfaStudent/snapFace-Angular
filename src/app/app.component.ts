@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
         description: 'Mon meilleur ami depuis tout petit !',
         url: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
         createDate: new Date(),
-        snaps: 0,
+        snaps: 150,
         location: "Paris"
       },
       {
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
       description: 'Mon meilleur ami depuis tout petit et encore tout petit !',
       url: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
       createDate: new Date(),
-      snaps: 0,
+      snaps: 1,
       location: "Orleans"
       },
 
