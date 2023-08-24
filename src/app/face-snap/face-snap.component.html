@@ -2,7 +2,7 @@
     <p>face-snap works!</p>
     <h2>{{faceSnap.title | titlecase}}</h2>
     <p> {{faceSnap.description}}</p>
-    <p> mise en ligne le : {{faceSnap.createDate}}</p>
+    <p> mise en ligne le : {{faceSnap.createDate | date: 'dd/MM/yy'}}</p>
 
     <!-- <img src={{url}}> -->
     <img [src]="faceSnap.url" alt="photo de {{faceSnap.title}}" height="" width="10%">
