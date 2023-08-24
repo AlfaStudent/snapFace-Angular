@@ -13,7 +13,8 @@ export class FaceSnapListComponent {
   }
 
   ngOnInit() {
-    this.faceSnaps = this.faceSnapsService.faceSnaps;
+    // this.faceSnaps = this.faceSnapsService.faceSnaps;
+    this.faceSnaps = this.faceSnapsService.getAllFaceSnaps();
   //   this.faceSnaps = [
   //     {
   //       title: 'Archibald',
