@@ -1,17 +1,18 @@
+
+
 <div class = "face-snap-card" [ngClass] = "{snapped: buttonText === 'Oops, Snap!' }">
     <p>face-snap works!</p>
     <h2>{{faceSnap.title | titlecase}}</h2>
     <p> {{faceSnap.description}}</p>
-    <button (click) = "onView()"> VIEW </button>
-    <!-- <p> mise en ligne le : {{faceSnap.createDate | date: 'dd/MM/yy'}}</p>
+    <p> mise en ligne le : {{faceSnap.createDate | date: 'dd/MM/yy'}}</p>
 
-    <img src={{url}} ceci reste en commentaire>
+    <!-- <img src={{url}}> -->
     <img [src]="faceSnap.url" alt="photo de {{faceSnap.title}}" height="" width="10%">
-    <p *ngIf = "faceSnap.location">photo prise a {{faceSnap.location}}</p> -->
-    <!-- <p >
+    <p *ngIf = "faceSnap.location">photo prise a {{faceSnap.location}}</p>
+    <p >
         <span [ngStyle] = "{color : 'rgb(0,'+ faceSnap.snaps + ',0)'}">  {{faceSnap.snaps}} </span>  
     <button (click)="onSnap()">
         <span >  {{buttonText}} </span>
     </button>
-    </p> -->
+    </p>
 </div>
