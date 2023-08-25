@@ -10,6 +10,7 @@ export class faceSnapsService {
 
     faceSnaps: FaceSnap[] = [
         {
+          id: 1,
           title: 'Archibald',
           description: 'Mon meilleur ami depuis tout petit !',
           url: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
@@ -18,7 +19,8 @@ export class faceSnapsService {
           location: "Paris"
         },
         {
-  
+
+        id : 2,
         title: 'Archibald2',
         description: 'Mon meilleur ami depuis tout petit et encore tout petit !',
         url: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
@@ -28,7 +30,8 @@ export class faceSnapsService {
         },
   
         {
-  
+
+        id: 3,
         title: 'Archibald3',
         description: 'Mon meilleur ami depuis tout petit et encore tout petit !',
         url: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
@@ -42,6 +45,16 @@ export class faceSnapsService {
       getAllFaceSnaps(): FaceSnap[] {
             return this.faceSnaps;
       }
+      snapFaceSnapById(id: number) : void {
+            const faceSnap = this.faceSnaps.find(faceSnap => faceSnap.id === id);
+            if (faceSnap) {
+                faceSnap.snaps++;
+            } else {
+                throw new Error("snap not found")
+            }
+            
+      }
+
 
       
 
