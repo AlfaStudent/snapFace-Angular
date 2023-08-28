@@ -3,6 +3,7 @@
 <div class = "face-snap-card" [ngClass] = "{snapped: buttonText === 'Oops, Snap!' }">
     <p>face-snap works!</p>
     <h2>{{faceSnap.title | titlecase}}</h2>
+    <a routerLink = "/facesnaps"> Back</a>
     <p> {{faceSnap.description}}</p>
     <p> mise en ligne le : {{faceSnap.createDate | date: 'dd/MM/yy'}}</p>
 
